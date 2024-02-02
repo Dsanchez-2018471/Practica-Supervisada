@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Contactos</title>
+    <link rel="stylesheet" href="../Styles/StyleContacto.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-buttons">
+            <a class="CerrarSecion" href="../../Index.html">Cerrar Sesión</a>
+            <a class="Fav" href="../../Index.html">Favoritos</a>
+            <button id="info-usuario-modal">User</button>
+        </div>
+    </header>
+    <div class="container">
+        <section class="titulo-seccion">
+            <h1>Lista de Contactos</h1>
+        </section>
+
+        <section class="contenido-seccion">
+            <ul id="lista-contactos">
+                <li class="contacto-container">Julian <p class="ptelefono">8496-3217</p><button class="detalle-btn1">Detalles</button></li>
+                <li class="contacto-container">Marcela <p class="ptelefono">9215-6481</p><button class="detalle-btn2">Detalles</button></li>
+                <li class="contacto-container">Paniagua <p class="ptelefono">5716-2472</p><button class="detalle-btn3">Detalles</button></li>
+                <li class="contacto-container">Lorenza <p class="ptelefono">3896-4574</p><button class="detalle-btn4">Detalles</button></li>
+                <li class="contacto-container">Castro <p class="ptelefono">6254-1969</p><button class="detalle-btn5">Detalles</button></li>
+            </ul>
+
+            <button id="agregar-contacto">Agregar Nuevo Contacto</button>
+        </section>
+<div id="ventana-agregar-contacto" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Agregar Nuevo Contacto</h2>
+        <form id="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono-casa">Teléfono Casa:</label>
+            <input type="text" id="telefono-casa" name="telefono-casa" required>
+
+            <label for="telefono-empresa">Teléfono Empresa:</label>
+            <input type="text" id="telefono-empresa" name="telefono-empresa" required>
+
+            <button type="submit">Agregar Contacto</button>
+        </form>
+    </div>
+</div>
+
+
+
+<div id="ventana-info-usuario-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>User</h2>
+        <form id="modal-user">
+            <p><strong>Nombre:</strong> Derick Angel Gabriel Sanchez Barrios</p>
+            <p><strong>Correo:</strong> dsanchez-2018471@kinal.edu.gt</p>
+            <p><strong>Tel:</strong> 4799-7240</p>
+        </form>
+    </div>
+</div>
+
+
+<div id="myModal1" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Nombre: Julian</p>
+        <p>Correo: julianaster@gmail.com</p>
+    </div>
+</div>
+
+
+<div id="myModal2" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Nombre: Marcela</p>
+        <p>Correo: marcelaterra@gmail.com</p>
+    </div>
+</div>
+
+
+<div id="myModal3" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Nombre: Paniagua</p>
+        <p>Correo: paniaguaclamer@gmail.com</p>
+    </div>
+</div>
+
+
+<div id="myModal4" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Nombre: Lorenza</p>
+        <p>Correo: lorenzaselva@gmail.com</p>
+    </div>
+</div>
+
+
+<div id="myModal5" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Nombre: Castro</p>
+        <p>Correo: castroracing@gmail.com</p>
+    </div>
+</div>
+
+
+    <script src="../js/contactoJS.js"></script>
+</body>
+</html>
